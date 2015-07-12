@@ -179,8 +179,8 @@ module.exports = function(command, opt) {
 			skip = true;
 		}
 
-		if ((opt.testSuite) && (! skip)) {
-			cmd += ' ' + opt.testSuite;
+		if ((opt.testSuite)) {
+			cmd += ' --testsuite ' + opt.testSuite;
 			skip = true;
 		}
 
